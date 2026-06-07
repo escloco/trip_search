@@ -21,11 +21,38 @@ you lean "beaches & relaxed" over "bars."
   - Koufonisia Tours — https://koufonissiatours.gr/activities-tours/
   - Day trips (CheckYeti) — https://www.checkyeti.com/en/boat-tours/greece/kato-koufonisi/day-trips
 
-## Accommodation (sleeps 6 / 3 bedrooms) ⚠️
-- Available but **limited** — fewer big houses than Paros, books out fast.
-- **Koufonisi Villas** complex — 4BR & 6BR houses near Pori beach.
-- **Villa Elopia / Villa Erossa** — 6BR sister villas at Pori Bay.
-- Link: https://rentagreekvilla.com/destinations/koufonisia/
+## Accommodation — 3 recommendations (3BR / sleeps 6)
+
+**Two island-specific catches:**
+1. **Thin stock for a single 3BR house-for-6** — many "villas" are clusters of studios/apartments, so
+   staying all together can mean booking 2–3 adjacent units.
+2. **Weekly (Sat–Sat) bookings are common in peak July** — several owners won't take a 2-night Fri–Sun
+   stay in season. Confirm per property; this is Koufonisia's biggest risk.
+
+**How I searched:** web searches for `Koufonisia villa 3 bedroom sleeps 6 private pool` and
+`Koufonisia house 6 guests Chora/Pori`, then name-verified each candidate (St'Astra, Orkos/Naxea,
+Koufonisi Villas) on VRBO / Booking.com / Airbnb / owner sites. Exact 17–19 July prices need manual
+date entry (platforms block automated quotes); figures are estimates from listed/average rates + premium.
+
+### 1. Villa St'Astra – Villa Dias or Villa Aris (premium) 🥇
+- Single villa, **3 bedrooms all sea-view**, by the sea; complex pool, gym, spa.
+- https://villa-stastra.gr/ · https://www.vrbo.com/839009ha · https://www.fine-rentals.com/holiday-rental-greece-koufunissi-astra-villas-2013.html
+- **Est. ~€700–1,000/night → ~€1,400–2,000 / 2 nights** (may rent only as full 2-villa complex from ~$1,340/night, possibly weekly).
+
+### 2. Orkos hill 3BR villa (Naxea Villas) — mid-tier
+- 3BR, **private pool, sea + sunset views** on Orkos hill.
+- https://www.airbnb.com/koufonisia-greece/stays/villas (search "Naxea"/"Orkos") · https://www.booking.com/villas/city/gr/koufonisi.html
+- **Est. ~€450–700/night → ~€900–1,400 / 2 nights.**
+
+### 3. Koufonisi Villas, Pori — on-budget / beachfront
+- Self-catering villas/apartments minutes from **Pori beach**; island avg ~€403/night. Book a larger
+  unit (or two adjacent) for 6.
+- https://www.booking.com/hotel/gr/koufonisia-villa-2.html · https://www.koufonisivillas.com/pori-beach
+- **Est. ~€350–450/night → ~€700–900 / 2 nights** (or a Chora apartment for 6 ~€150–300/night → ~€300–600 / 2 nights).
+
+### Larger alternatives (if you want one big house and budget flexes)
+- **Villa Elopia / Villa Erossa** (6BR, Pori Bay) — https://rentagreekvilla.com/destinations/koufonisia/
+- **Villa Porithea** (6BR, Pori) — ~€1,300–1,600/night — https://www.koufonisivillas.com/villas/villa-porithea
 
 ## Verdict
 Best **beaches-and-relaxed** vibe and the boat day works — but accept quieter nightlife, and **lock the
