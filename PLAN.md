@@ -72,6 +72,33 @@ charming old harbor town with excellent tavernas and stylish bars.
 
 ---
 
+## Naoussa Accommodation Shortlist (researched — book ASAP for 17–19 July 2026)
+All sleep 6 in 3 bedrooms (~2 per room) and are mid-range, not ultra-luxury. **Live exact-date July
+2026 prices require a manual search on each platform** (the booking sites block automated quotes), so
+treat the rates below as ballpark and request quotes for our dates.
+
+> **Budget reality check:** in peak July a 3BR *private-pool* villa in Naoussa runs roughly
+> **€400–650/night** (weekend avg ~€420, can spike to ~€650). Our plan budgeted €300–400/night, so to
+> stay on target either (a) take an **in-town house without a private pool** (cheaper, most walkable
+> for the bar nights), or (b) accept a villa **slightly outside the center** with a car/ATV. Two nights
+> at €400–500/night = €800–1,000 — still inside the overall €3,000 cap if we trim elsewhere.
+
+### 🥇 Walkable to town (best for the bachelor bar-crawl nights)
+- **Naoussa Townhouse** — 3BR / 3BA, sleeps 6, **private pool, walking distance to the town center**. Top pick for "everyone together + stumble home from the harbor bars." → https://www.rentavilla.com/property/naoussa-townhouse-2047
+- **"Colors in Naoussa" (Airbnb)** — self-contained house for 6 in the **heart of the old town** (no pool, but the most authentic + walkable). Search "Colors in Naoussa" on → https://www.airbnb.com/naousa-greece/stays
+- **Paros Luxury Villas – 3BR Naoussa** — sleeps 6, private pool, ~**1.3 km walk** to center (agency, premium tier). → https://www.parosluxuryvillas.com/
+
+### 🥈 Short drive out (often 20–30% cheaper; need a car/2 ATVs)
+- **Villa Naoussa (Rentavilla)** — 3BR / 2BA, sleeps 6, **~1 km from center**, set in a 16-acre vineyard complex (countryside feel, town close). Good value. → https://www.rentavilla.com/property/villa-naoussa-1901
+- **Villa Coconut** — 3BR, sleeps 6, **private pool, ~3 km from Naoussa** (2.5 km to Santa Maria/Ambelas beaches); avg ~€420–455/night. Needs transport. → https://www.bookingparos.com/villa-one.php?villa=271
+- **Marriott Homes & Villas – 3BR villa near Naousa** — sleeps up to 7, **panoramic Naoussa-bay views**, private pool. → https://homes-and-villas.marriott.com/en/properties/40170126-paros-bedroom-villa-near-naousa
+- **Kosmitis Villas (Mare / Acta / Sol)** — 3BR private-pool villas in the Naoussa area. → https://www.kosmitisparos.com/
+
+### How to book
+1. Fire the **exact dates (17–19 July 2026)** at the top 3 walkable options first — they go fastest.
+2. Get **3 quotes** and confirm: sleeps 6 / 3 separate bedrooms, total for 2 nights, distance to harbor, parking.
+3. Lock the one that lands **≤€500/night walkable**, or **≤€400/night** if slightly out (then add 2 ATVs).
+
 ## Bookings & Logistics (what to lock in, in priority order)
 1. **Villa** — book FIRST; 3-bedroom houses for 6 in Naoussa sell out for July. Sources:
    - Paros Luxury Villas — https://www.parosluxuryvillas.com/
