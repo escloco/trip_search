@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2a6b"/><stop offset="1" stop-color="#ff9e6d"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a5aa6"/><stop offset="1" stop-color="#2c2151"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="760" fill="url(#sky)"/>
+  <circle cx="400" cy="150" r="46" fill="#ffd36e" opacity="0.9"/>
+  <path d="M0 360 Q160 300 360 340 Q560 380 800 330 L800 560 L0 560 Z" fill="#c9b79c" opacity="0.55"/>
+  <g><path d="M150 500 q50 20 100 0 l-14 28 q-36 12 -72 0 z" fill="#fff" stroke="#1b4965" stroke-width="3"/>
+              <rect x="196" y="458" width="4" height="44" fill="#1b4965"/><path d="M200 462 l36 32 -36 6 z" fill="#2a9d8f"/></g>
+  <g>
+    <rect x="60" y="430" width="90" height="110" rx="6" fill="#ffffff"/>
+    <rect x="130" y="470" width="80" height="70" rx="6" fill="#f3f4f6"/>
+    <rect x="200" y="440" width="70" height="100" rx="6" fill="#ffffff"/>
+    <rect x="95" y="455" width="16" height="16" fill="#2a6f97"/>
+    <rect x="160" y="492" width="14" height="14" fill="#2a6f97"/>
+    <rect x="225" y="465" width="16" height="16" fill="#2a6f97"/>
+    <path d="M250 440 a30 30 0 0 1 60 0 z" fill="#1d70a2"/>
+    <rect x="250" y="440" width="60" height="100" fill="#ffffff"/>
+    <rect x="276" y="408" width="8" height="32" fill="#ffffff"/>
+    <rect x="266" y="420" width="28" height="8" fill="#ffffff"/>
+    <rect x="270" y="478" width="20" height="62" fill="#2a6f97"/>
+  </g>
+  <rect y="540" width="800" height="220" fill="url(#sea)"/>
+  <g stroke="#ffffff" stroke-opacity="0.35" stroke-width="3" fill="none">
+    <path d="M40 590 q40 -12 80 0 t80 0 t80 0 t80 0"/>
+    <path d="M120 640 q40 -12 80 0 t80 0 t80 0 t80 0"/>
+    <path d="M60 690 q40 -12 80 0 t80 0 t80 0 t80 0 t80 0"/>
+  </g>
+  <rect width="800" height="760" fill="none"/>
+</svg>

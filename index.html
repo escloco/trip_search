@@ -48,8 +48,9 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:26px 22px}
   .card{cursor:pointer}
   .photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:20/19;display:flex;align-items:flex-end;padding:14px;color:#fff}
-  .photo .ovl{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.45))}
-  .photo .island-tag{position:relative;font-size:13px;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+  .photo img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .photo .ovl{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.45))}
+  .photo .island-tag{position:relative;z-index:2;font-size:13px;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.4)}
   .badge{position:absolute;top:12px;left:12px;background:#fff;color:#222;font-size:11.5px;font-weight:700;padding:6px 11px;border-radius:20px;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.15)}
   .heart{position:absolute;top:10px;right:10px;z-index:2;cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center}
   .heart svg{width:24px;height:24px;fill:rgba(0,0,0,.5);stroke:#fff;stroke-width:2;transition:.15s}
@@ -57,8 +58,6 @@
   .info{padding:11px 2px 0}
   .row1{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
   .title{font-size:15px;font-weight:600;line-height:1.25}
-  .star{font-size:13px;white-space:nowrap;display:flex;align-items:center;gap:3px}
-  .star svg{width:13px;height:13px;fill:#222}
   .meta{color:var(--grey);font-size:14px;margin-top:2px}
   .price{margin-top:7px;font-size:14px}
   .price b{font-weight:700}
@@ -175,30 +174,32 @@ const grid = document.getElementById('grid');
 const countEl = document.getElementById('count');
 let curIsland = "all", curTier = "all";
 
-const starSvg = '<svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5.2 4.8 1.4 7L12 18l-6.2 3.2 1.4-7L2 9.4l7-.9z"/></svg>';
+// assign a themed scene image to each listing (images/<island>-<n>.svg)
+const islandCount = {};
+listings.forEach(l=>{ islandCount[l.island]=(islandCount[l.island]||0)+1;
+  l.img = "images/"+l.island.toLowerCase()+"-"+islandCount[l.island]+".svg"; });
+
 const heartSvg = '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.6C.5 8.3 2 5 5.2 5c2 0 3.3 1.1 4.1 2.3l.7 1 .7-1C11.5 6.1 12.8 5 14.8 5 18 5 19.5 8.3 22 11.4 19.5 16.1 12 21 12 21z"/></svg>';
 
 function render(){
   grid.innerHTML = "";
   const items = listings.filter(l =>
     (curIsland==="all"||l.island===curIsland) && (curTier==="all"||l.tier===curTier));
-  items.forEach((l,i)=>{
+  items.forEach((l)=>{
     const total2 = "≈ €"+(l.low*2).toLocaleString()+"–"+(l.high*2).toLocaleString()+" total";
-    const rating = (4.7 + (i%5)*0.05).toFixed(2); // illustrative
     const card = document.createElement('a');
     card.className="card"; card.href=l.url; card.target="_blank"; card.rel="noopener";
     card.innerHTML = `
       <div class="photo" style="background:${l.grad}">
+        <img class="bg" src="${l.img}" alt="${l.island} scene" loading="lazy">
         <div class="badge">${l.tier}</div>
         <div class="heart" onclick="event.preventDefault();this.classList.toggle('liked')">${heartSvg}</div>
         <div class="ovl"></div>
-        <div class="island-tag" style="font-size:46px;position:absolute;top:50%;left:50%;transform:translate(-50%,-60%)">${l.emoji}</div>
-        <div class="island-tag">📍 ${l.island}</div>
+        <div class="island-tag">${l.emoji} ${l.island}</div>
       </div>
       <div class="info">
         <div class="row1">
           <div class="title">${l.title}</div>
-          <div class="star">${starSvg}${rating}</div>
         </div>
         <div class="meta">${l.meta}</div>
         <div class="meta">3 bedrooms · 6 guests</div>
