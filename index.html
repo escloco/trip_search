@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripSearch · Cyclades Stays for 6 · Jul 17–19, 2026</title>
+<style>
+  :root{
+    --pink:#FF385C; --dark:#222; --grey:#717171; --line:#ebebeb; --bg:#fff;
+    --shadow:0 6px 16px rgba(0,0,0,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--dark);background:var(--bg);-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+  .nav{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{display:flex;align-items:center;gap:8px;color:var(--pink);font-weight:800;font-size:22px;letter-spacing:-.5px}
+  .logo svg{width:30px;height:30px;fill:var(--pink)}
+  .searchbar{display:flex;align-items:center;border:1px solid var(--line);border-radius:40px;
+       box-shadow:0 1px 6px rgba(0,0,0,.08);padding:6px 6px 6px 18px;font-size:14px;font-weight:600;gap:6px;cursor:pointer}
+  .searchbar .seg{padding:0 12px;white-space:nowrap}
+  .searchbar .sep{width:1px;height:22px;background:var(--line)}
+  .searchbar .sub{color:var(--grey);font-weight:400}
+  .searchbar .go{background:var(--pink);color:#fff;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-left:4px}
+  .searchbar .go svg{width:16px;height:16px;fill:#fff}
+  .profile{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:40px;padding:6px 8px 6px 14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+  .profile .menu{display:flex;flex-direction:column;gap:3px}
+  .profile .menu span{width:16px;height:2px;background:#717171;border-radius:2px}
+  .profile .av{width:30px;height:30px;border-radius:50%;background:#717171;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+
+  /* Filter pills */
+  .filters{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;gap:10px;align-items:center;overflow-x:auto}
+  .pill{border:1px solid var(--line);background:#fff;border-radius:24px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s;display:flex;align-items:center;gap:7px}
+  .pill:hover{border-color:#222}
+  .pill.active{background:#222;color:#fff;border-color:#222}
+  .pill .emoji{font-size:15px}
+  .spacer{flex:1}
+  .tier-toggle{display:flex;gap:8px}
+  .tier{border:1px solid var(--line);border-radius:20px;padding:8px 14px;font-size:12.5px;font-weight:600;cursor:pointer}
+  .tier.active{background:#fff5f7;border-color:var(--pink);color:var(--pink)}
+
+  /* Grid */
+  .wrap{max-width:1280px;margin:0 auto;padding:8px 24px 60px}
+  .count{font-size:13px;color:var(--grey);margin:10px 2px 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:26px 22px}
+  .card{cursor:pointer}
+  .photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:20/19;display:flex;align-items:flex-end;padding:14px;color:#fff}
+  .photo .ovl{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.45))}
+  .photo .island-tag{position:relative;font-size:13px;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+  .badge{position:absolute;top:12px;left:12px;background:#fff;color:#222;font-size:11.5px;font-weight:700;padding:6px 11px;border-radius:20px;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .heart{position:absolute;top:10px;right:10px;z-index:2;cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center}
+  .heart svg{width:24px;height:24px;fill:rgba(0,0,0,.5);stroke:#fff;stroke-width:2;transition:.15s}
+  .heart.liked svg{fill:var(--pink);stroke:#fff}
+  .info{padding:11px 2px 0}
+  .row1{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+  .title{font-size:15px;font-weight:600;line-height:1.25}
+  .star{font-size:13px;white-space:nowrap;display:flex;align-items:center;gap:3px}
+  .star svg{width:13px;height:13px;fill:#222}
+  .meta{color:var(--grey);font-size:14px;margin-top:2px}
+  .price{margin-top:7px;font-size:14px}
+  .price b{font-weight:700}
+  .price .tot{color:var(--grey);font-weight:400}
+  .hidden{display:none}
+
+  .note{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--grey);font-size:12.5px;line-height:1.6}
+  .note b{color:#222}
+  @media(max-width:740px){.searchbar .sub{display:none}.searchbar .seg{padding:0 8px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#">
+      <svg viewBox="0 0 32 32"><path d="M16 1c-3 0-5 2.5-7.3 7.2C5.3 14.9 2 22 2 25.4 2 28.9 4.6 31 8 31c2.2 0 4.4-1.2 8-4 3.6 2.8 5.8 4 8 4 3.4 0 6-2.1 6-5.6 0-3.4-3.3-10.5-6.7-17.2C21 3.5 19 1 16 1zm0 3c1.4 0 2.8 1.8 4.6 5.5C23.7 15.6 27 22.4 27 25.4c0 1.6-1.1 2.6-3 2.6-1.5 0-3.4-1.1-6.6-3.7l-1.4-1.2-1.4 1.2C11.4 26.9 9.5 28 8 28c-1.9 0-3-1-3-2.6 0-3 3.3-9.8 6.4-15.9C13.2 5.8 14.6 4 16 4z"/></svg>
+      tripsearch
+    </a>
+    <div class="searchbar">
+      <span class="seg">Cyclades</span><span class="sep"></span>
+      <span class="seg">Jul 17–19, 2026 <span class="sub">· 2 nights</span></span><span class="sep"></span>
+      <span class="seg sub">6 guests</span>
+      <span class="go"><svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.3 14l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg></span>
+    </div>
+    <div class="profile"><div class="menu"><span></span><span></span><span></span></div><div class="av">MS</div></div>
+  </div>
+</header>
+
+<div class="filters" id="islandFilters">
+  <div class="pill active" data-island="all"><span class="emoji">🌊</span>All islands</div>
+  <div class="pill" data-island="Paros"><span class="emoji">🥇</span>Paros</div>
+  <div class="pill" data-island="Milos"><span class="emoji">🏖️</span>Milos</div>
+  <div class="pill" data-island="Sifnos"><span class="emoji">🍽️</span>Sifnos</div>
+  <div class="pill" data-island="Koufonisia"><span class="emoji">⛵</span>Koufonisia</div>
+  <div class="pill" data-island="Naxos"><span class="emoji">⛰️</span>Naxos</div>
+  <div class="spacer"></div>
+  <div class="tier-toggle" id="tierFilters">
+    <div class="tier active" data-tier="all">All prices</div>
+    <div class="tier" data-tier="Premium">Premium</div>
+    <div class="tier" data-tier="Mid-range">Mid-range</div>
+    <div class="tier" data-tier="On-budget">On-budget</div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="note">
+  <b>Heads-up on prices:</b> all rates are estimates for the group of 6 over <b>Fri 17 → Sun 19 July 2026</b> (2 nights), based on listed/average rates plus a peak-July premium. Booking platforms block automated quotes, so confirm exact prices for your dates directly on each listing. All homes are 3-bedroom / sleep 6 (~2 per room).
+</div>
+
+<script>
+const listings = [
+  // PAROS
+  {island:"Paros", tier:"Premium", title:"Naoussa Townhouse", meta:"Walk to harbour bars · private pool · 3BR/3BA",
+   low:500, high:700, grad:"linear-gradient(135deg,#3a7bd5,#00d2ff)", emoji:"🏛️",
+   url:"https://www.rentavilla.com/property/naoussa-townhouse-2047"},
+  {island:"Paros", tier:"Mid-range", title:"Villa Coconut", meta:"~3 km out · private pool · garden",
+   low:420, high:550, grad:"linear-gradient(135deg,#11998e,#38ef7d)", emoji:"🌴",
+   url:"https://www.bookingparos.com/villa-one.php?villa=271"},
+  {island:"Paros", tier:"On-budget", title:"Colors in Naoussa", meta:"Old-town heart · most walkable · no pool",
+   low:200, high:350, grad:"linear-gradient(135deg,#ee9ca7,#ffdde1)", emoji:"🎨",
+   url:"https://www.airbnb.com/naousa-greece/stays"},
+
+  // MILOS
+  {island:"Milos", tier:"Premium", title:"Villa Manikas — Adamantas", meta:"Near port & bars · private pool",
+   low:500, high:750, grad:"linear-gradient(135deg,#f7971e,#ffd200)", emoji:"⚓",
+   url:"https://www.myboutiquehotel.com/en/boutique-hotels-adamas/villa-manikas-milos.html"},
+  {island:"Milos", tier:"Mid-range", title:"Milos Villas Private Pools", meta:"Near Pollonia · 3 en-suite · pool",
+   low:450, high:650, grad:"linear-gradient(135deg,#2193b0,#6dd5ed)", emoji:"🐚",
+   url:"https://www.mykonosvillasgreece.com/villa/milos-villas-private-pools/"},
+  {island:"Milos", tier:"On-budget", title:"Central Adamas Apartment", meta:"Walk to all bars · bay views · no pool",
+   low:200, high:350, grad:"linear-gradient(135deg,#bdc3c7,#2c3e50)", emoji:"🏘️",
+   url:"https://www.airbnb.com/milos-greece/stays/houses"},
+
+  // SIFNOS
+  {island:"Sifnos", tier:"Premium", title:"Apollonia Summer Villa", meta:"4-min walk to Steno nightlife · pool",
+   low:650, high:850, grad:"linear-gradient(135deg,#8e2de2,#4a00e0)", emoji:"🍸",
+   url:"https://www.airbnb.com/rooms/48359361"},
+  {island:"Sifnos", tier:"Premium", title:"Nesea Sifnos — Villa Thetis", meta:"Platis Gialos · design · sea-view pool",
+   low:780, high:960, grad:"linear-gradient(135deg,#283c86,#45a247)", emoji:"🌅",
+   url:"https://www.airbnb.com/rooms/51256919"},
+  {island:"Sifnos", tier:"On-budget", title:"Apollonia Town House", meta:"Walk to centre · no pool · on-budget",
+   low:150, high:280, grad:"linear-gradient(135deg,#c79081,#dfa579)", emoji:"🏠",
+   url:"https://www.booking.com/villas/city/gr/apollonia.html"},
+
+  // KOUFONISIA
+  {island:"Koufonisia", tier:"Premium", title:"Villa St'Astra — Dias / Aris", meta:"By the sea · 3BR all sea-view · pool",
+   low:700, high:1000, grad:"linear-gradient(135deg,#1cb5e0,#000851)", emoji:"💎",
+   url:"https://villa-stastra.gr/"},
+  {island:"Koufonisia", tier:"Mid-range", title:"Orkos Hill Villa (Naxea)", meta:"Private pool · sea + sunset views",
+   low:450, high:700, grad:"linear-gradient(135deg,#ff6e7f,#bfe9ff)", emoji:"⛵",
+   url:"https://www.airbnb.com/koufonisia-greece/stays/villas"},
+  {island:"Koufonisia", tier:"On-budget", title:"Koufonisi Villas — Pori", meta:"Beachfront · self-catering · near Pori",
+   low:350, high:450, grad:"linear-gradient(135deg,#43cea2,#185a9d)", emoji:"🏝️",
+   url:"https://www.booking.com/hotel/gr/koufonisia-villa-2.html"},
+
+  // NAXOS
+  {island:"Naxos", tier:"Mid-range", title:"Villa Valea — Agios Prokopios", meta:"150 m to beach · private pool · garden",
+   low:350, high:550, grad:"linear-gradient(135deg,#f12711,#f5af19)", emoji:"🏖️",
+   url:"https://www.booking.com/villas/region/gr/naxos.html"},
+  {island:"Naxos", tier:"Mid-range", title:"Albatross Seafront House", meta:"2-min walk to Chora bars · 3BR/3BA · sea views",
+   low:300, high:450, grad:"linear-gradient(135deg,#4e54c8,#8f94fb)", emoji:"🌊",
+   url:"https://www.airbnb.com/naxos-greece/stays/houses"},
+  {island:"Naxos", tier:"On-budget", title:"Naxos Center Houses", meta:"Central Chora · 6-min walk to beach",
+   low:150, high:220, grad:"linear-gradient(135deg,#c94b4b,#4b134f)", emoji:"⛰️",
+   url:"https://www.booking.com/hotel/gr/naxos-center-houses-naxos.html"},
+];
+
+const grid = document.getElementById('grid');
+const countEl = document.getElementById('count');
+let curIsland = "all", curTier = "all";
+
+const starSvg = '<svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5.2 4.8 1.4 7L12 18l-6.2 3.2 1.4-7L2 9.4l7-.9z"/></svg>';
+const heartSvg = '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.6C.5 8.3 2 5 5.2 5c2 0 3.3 1.1 4.1 2.3l.7 1 .7-1C11.5 6.1 12.8 5 14.8 5 18 5 19.5 8.3 22 11.4 19.5 16.1 12 21 12 21z"/></svg>';
+
+function render(){
+  grid.innerHTML = "";
+  const items = listings.filter(l =>
+    (curIsland==="all"||l.island===curIsland) && (curTier==="all"||l.tier===curTier));
+  items.forEach((l,i)=>{
+    const total2 = "≈ €"+(l.low*2).toLocaleString()+"–"+(l.high*2).toLocaleString()+" total";
+    const rating = (4.7 + (i%5)*0.05).toFixed(2); // illustrative
+    const card = document.createElement('a');
+    card.className="card"; card.href=l.url; card.target="_blank"; card.rel="noopener";
+    card.innerHTML = `
+      <div class="photo" style="background:${l.grad}">
+        <div class="badge">${l.tier}</div>
+        <div class="heart" onclick="event.preventDefault();this.classList.toggle('liked')">${heartSvg}</div>
+        <div class="ovl"></div>
+        <div class="island-tag" style="font-size:46px;position:absolute;top:50%;left:50%;transform:translate(-50%,-60%)">${l.emoji}</div>
+        <div class="island-tag">📍 ${l.island}</div>
+      </div>
+      <div class="info">
+        <div class="row1">
+          <div class="title">${l.title}</div>
+          <div class="star">${starSvg}${rating}</div>
+        </div>
+        <div class="meta">${l.meta}</div>
+        <div class="meta">3 bedrooms · 6 guests</div>
+        <div class="price"><b>€${l.low}–${l.high}</b> night <span class="tot">· ${total2}</span></div>
+      </div>`;
+    grid.appendChild(card);
+  });
+  countEl.textContent = items.length + " homes · 3 bedrooms · sleep 6 · Jul 17–19, 2026"
+    + (curIsland!=="all" ? " · "+curIsland : "");
+}
+
+document.getElementById('islandFilters').addEventListener('click', e=>{
+  const p = e.target.closest('.pill'); if(!p) return;
+  document.querySelectorAll('#islandFilters .pill').forEach(x=>x.classList.remove('active'));
+  p.classList.add('active'); curIsland = p.dataset.island; render();
+});
+document.getElementById('tierFilters').addEventListener('click', e=>{
+  const t = e.target.closest('.tier'); if(!t) return;
+  document.querySelectorAll('#tierFilters .tier').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active'); curTier = t.dataset.tier; render();
+});
+
+render();
+</script>
+</body>
+</html>
