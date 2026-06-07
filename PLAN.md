@@ -1,8 +1,8 @@
 # 2-Day Bachelor-Party Trip to Paros, Greece
 
 ## Context
-A friend's bachelor party for **6 people**, traveling from **Athens** in **July 2026** for a
-**2-night** island getaway. The brief: an island **4–5 hours from Athens**, **not ultra-luxury**,
+A friend's bachelor party for **6 people**, traveling from **Athens** on **Fri 17 → Sun 19 July 2026**
+(2 nights, a Friday-to-Sunday weekend). The brief: an island **4–5 hours from Athens**, **not ultra-luxury**,
 **chill vibe with some bars** (not a big-club scene), the group **staying together** (≈2 people per
 bedroom), one **full day with a private skipper** to hop beaches, swim, and have lunch, and an
 **all-in group budget of €2,000–3,000**.
@@ -22,6 +22,7 @@ charming old harbor town with excellent tavernas and stylish bars.
 ## The Plan at a Glance
 | Item | Detail |
 |---|---|
+| **Dates** | Fri 17 → Sun 19 July 2026 (2 nights) |
 | **Island** | Paros (Cyclades) |
 | **Base** | Naoussa (harbor town — bars, food, walkable) |
 | **Getting there** | SeaJets fast ferry, Piraeus → Paros, **~2h40m–3h** (within 4–5h window) |
@@ -50,24 +51,24 @@ charming old harbor town with excellent tavernas and stylish bars.
 
 ## Day-by-Day Itinerary
 
-### Day 0 (arrival evening — optional, if you take an afternoon ferry)
+### Fri 17 July — Arrival evening
 - Afternoon SeaJets ferry Piraeus → Paros.
 - Check into the Naoussa villa, drop bags.
 - Sunset drinks + a long taverna dinner in **Naoussa old harbor**; a couple of cocktail bars after. Easy first night.
 
-### Day 1 — The Private Skipper Day 🛥️ (the centerpiece)
+### Sat 18 July — The Private Skipper Day 🛥️ (the centerpiece)
 - Morning departure from **Naoussa or Pounda** with your private skipper.
 - Route: **Paros → Antiparos → the "Blue Lagoon" (Panteronisi) → Despotiko → sea caves**, swimming and snorkeling at multiple beaches.
 - **Lunch** either onboard or a beach taverna stop (e.g., on Antiparos / Despotiko area).
 - Return late afternoon; nap/clean up at villa.
 - Evening: bachelor-party dinner in Naoussa + bar crawl through the harbor's cocktail spots. Keep it lively but relaxed.
 
-### Day 2 — Chill + departure
+### Sun 19 July — Chill + departure
 - Slow morning, swim at a top Paros beach (**Kolymbithres** — sculpted rocks, near Naoussa — or **Santa Maria**).
 - Light lunch, last harbor walk / souvenir stop.
 - Afternoon/evening fast ferry back to Athens.
 
-*(If you'd rather have 2 full days on-island, take an early Day-1 ferry out and a late Day-2 ferry back — the itinerary flexes either way.)*
+*(If you'd rather have 2 full days on-island, take an early Fri 17 ferry out and a late Sun 19 ferry back — the itinerary flexes either way.)*
 
 ---
 
@@ -92,7 +93,7 @@ pricier (from ~€1,450/boat), so you'd likely switch to a **shared** small-Cycl
 to stay on budget. Keep Paros as first choice for the private-skipper economics.
 
 ## "Verification" — how to confirm the plan holds together
-- Confirm **fixed travel dates** → check live SeaJets availability + price on Ferryhopper; verify a sailing in the 4–5h window exists for those dates.
+- **Dates locked: Fri 17 → Sun 19 July 2026.** Check live SeaJets availability + price on Ferryhopper for an afternoon sailing out on Fri 17 and a late-afternoon/evening return on Sun 19; verify the ~2h40m–3h fast ferry runs both days.
 - Get **3 villa quotes** for the exact dates to confirm 3BR/6-person availability at ≤€400/night.
 - Request **2–3 skipper quotes** (Click&Boat / SamBoat / zastours) for a full private day, fuel included, for 6 pax → confirm ≤€800.
 - Re-total against the budget table; adjust ferry class / villa location if the comfortable estimate creeps over €3,000.
