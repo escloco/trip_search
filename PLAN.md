@@ -87,10 +87,50 @@ charming old harbor town with excellent tavernas and stylish bars.
 4. **Airport-to-port** in Athens — allow 60–90 min from ATH to Piraeus; arrive 45 min before fast-ferry departure in July.
 5. **Local transfers** — a couple of taxis or a pre-booked van for port↔villa; consider renting 2 ATVs/scooters for Day 2 mobility.
 
-## Alternative (if Paros is booked out)
-**Naxos** — same ferry corridor, more low-key, excellent food. Trade-off: private boat days are
-pricier (from ~€1,450/boat), so you'd likely switch to a **shared** small-Cyclades cruise (~€150 pp)
-to stay on budget. Keep Paros as first choice for the private-skipper economics.
+## Backup Islands (if we don't land a house for 6 in Paros)
+All vetted against the same brief: **4–5h from Athens, bars-but-not-clubs, one house for all 6, an
+*affordable* private skipper day, €2,000–3,000 all-in.** Ranked by fit.
+
+**Fit ranking:** Paros (1st choice) → **Milos** → **Sifnos** → **Koufonisia** → Naxos.
+
+| Island | Ferry (fast) | Vibe / bars | Private skipper | House for 6 | Notes |
+|---|---|---|---|---|---|
+| **Milos** | ~2h40m ✅ | Chill bars in Adamantas/Pollonia, not clubby | ✅ Private day to **Kleftiko** sea caves, boats for up to 8 — affordable | Plenty | Best all-round backup — closest, dramatic scenery, boat economics work |
+| **Sifnos** | ~2h30m ✅ | Best bar scene of the chill islands — Apollonia's "Steno" + top Cycladic food | ✅ Available | Available | Pick if you want bars + food without a club scene |
+| **Koufonisia** | ~4h (⚠️ only 1–3 sailings/day) | Most chill — gorgeous beaches, no cars; thin bar scene | ✅ Affordable RIB/speedboat day to Keros / Kato Koufonisi / Schinoussa | Limited — books out fast | Best beaches-and-relaxed vibe; lock ferry + house early |
+| **Naxos** | ~3.5–4h | Some chora bars, beaches, variety | ⚠️ Pricey — private full-day from ~€1,450 | Easiest (tons of villas) | Easiest housing, but private boat blows budget unless shared (~€150 pp) |
+
+### 🥈 Milos (strongest backup)
+- **Ferry:** SeaJets fast ferry Piraeus → Milos ~**2h40m** (well inside window), ~€41–79 pp.
+- **Skipper day:** full-day private boat to **Kleftiko** white cliffs & sea caves + Sarakiniko — boats for up to 8, fuel-included day stays within the €600–800 line.
+- **Stay:** base in **Adamantas** (port, bars, food) or **Pollonia** (quieter); good supply of villas/houses for 6.
+- **Booking links:**
+  - Ferry — https://www.ferryhopper.com/en/ferry-routes/direct/athens-milos
+  - Villas — https://www.booking.com/region/gr/milos.html
+  - Private Kleftiko charter — https://www.clickandboat.com/us/rentals/country-greece/islands-cyclades/island-milos
+
+### 🥉 Sifnos
+- **Ferry:** fast ferry Piraeus → Kamares ~**2h30m**, ~€40–50 pp; Apollonia (nightlife hub) is a 10-min drive from the port.
+- **Vibe:** best food in the Cyclades + a real-but-balanced bar scene in the **"Steno"** alley (GAD rooftop, Cosi, Doloma) — lively without being a club island.
+- **Booking links:**
+  - Ferry — https://www.ferryhopper.com/en/ferry-routes/direct/athens-to-sifnos
+  - Villas — https://www.booking.com/region/gr/sifnos.html
+  - Private boat day — https://www.samboat.com/boat-rental/sifnos-greece
+
+### Koufonisia (your shortlist pick)
+- **Ferry:** fastest ~**4h** from Piraeus (SeaJets / Blue Star), ~€45–60 pp. ⚠️ Only **1–3 sailings/day** — confirm a Fri 17 out / Sun 19 back fast ferry exists before committing.
+- **Skipper day:** ✅ affordable — RIB/speedboat with captain to **Keros, Kato Koufonisi, Schinoussa, Iraklia** (operators like Koufonisia Tours run 6–7m RIBs + a 10m speedboat). Paros-level economics.
+- **Stay:** house for 6 is available but **limited** — the **Koufonisi Villas** complex (4BR & 6BR houses near Pori) and **Villa Elopia / Villa Erossa** (6BR). Fewer options than Paros, books out fast.
+- **Vibe:** the most chill on this list — beaches (Pori, Fanos, Italida), no cars (footpaths + bikes). Trade-off: **thin nightlife** — a few beach/harbor bars, nothing like Naoussa.
+- **Booking links:**
+  - Ferry — https://www.ferryhopper.com/en/ferry-routes/direct/athens-koufonisia
+  - Villas — https://rentagreekvilla.com/destinations/koufonisia/
+  - Private boat / skipper — https://koufonissiatours.gr/activities-tours/
+
+### Naxos (only if boat budget can flex)
+- Same ferry corridor (~3.5–4h), more low-key, excellent food, easiest housing for 6. Trade-off:
+  private boat days are pricier (from ~€1,450/boat), so you'd likely switch to a **shared**
+  small-Cyclades cruise (~€150 pp) to stay on budget. Keep Paros first for the private-skipper economics.
 
 ## "Verification" — how to confirm the plan holds together
 - **Dates locked: Fri 17 → Sun 19 July 2026.** Check live SeaJets availability + price on Ferryhopper for an afternoon sailing out on Fri 17 and a late-afternoon/evening return on Sun 19; verify the ~2h40m–3h fast ferry runs both days.
