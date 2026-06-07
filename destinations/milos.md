@@ -19,9 +19,29 @@ skipper day, €2,000–3,000 all-in. **Best all-round backup if Paros has no ho
 - A tender gets you right into the caves; many packages include snacks/drinks.
 - Link: https://www.clickandboat.com/us/rentals/country-greece/islands-cyclades/island-milos
 
-## Accommodation (sleeps 6 / 3 bedrooms)
-- Good supply of villas/houses for 6; base in **Adamantas** (walkable to bars/food) or **Pollonia**.
-- Link: https://www.booking.com/region/gr/milos.html
+## Accommodation — 3 recommendations (3BR / sleeps 6)
+
+**How I searched:** web searches for `Milos villa 3BR sleeps 6 private pool Adamantas/Pollonia` and
+`Milos house 6 guests near town`, then name-verified candidates on Booking.com / Airbnb / VRBO / owner
+sites. Milos averages ~€400/night for villas (friendlier than Sifnos). Exact 17–19 July prices need
+manual date entry (platforms block automated quotes); figures are estimates.
+
+### 1. Villa Manikas — Adamantas (near port & bars) 🥇
+- 3BR, private pool, parking; in **Adamantas** (port — bars, tavernas, ferry).
+- https://www.myboutiquehotel.com/en/boutique-hotels-adamas/villa-manikas-milos.html · https://www.booking.com/villas/region/gr/milos.html
+- **Est. ~€500–750/night → ~€1,000–1,500 / 2 nights.**
+
+### 2. Milos Villas Private Pools — near Pollonia (beach village)
+- 3 double en-suite bedrooms, open-plan living, private pool + terrace; quiet seaside Pollonia.
+- https://www.mykonosvillasgreece.com/villa/milos-villas-private-pools/
+- **Est. ~€450–650/night → ~€900–1,300 / 2 nights.**
+
+### 3. Central Adamas 3BR apartment (on-budget, no pool, most walkable)
+- Renovated 2-level 3BR/2BA overlooking Adamantas bay, **walk to all restaurants/bars**.
+- https://www.airbnb.com/milos-greece/stays/houses · https://www.airbnb.com/rooms/16938347
+- **Est. ~€200–350/night → ~€400–700 / 2 nights (on-budget).**
+
+*Alt: Villa Efrosini in hilltop **Plaka** — private pool, walkable to sunset bars (~€450–650/night).*
 
 ## Verdict
 Closest to the Paros feel — short ferry, dramatic coastline, working private-boat economics, plentiful
